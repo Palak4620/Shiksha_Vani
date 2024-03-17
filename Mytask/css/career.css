@@ -1,0 +1,554 @@
+body{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+.nav1{
+    padding-left: 7em;
+    padding-right: 7em;
+    display: flex;
+    flex-direction: row;
+    gap: 25em;    
+    align-items: flex-end;
+    background-color: #0296dc;
+}
+.nav1 img{
+    width: 20px;
+}
+.nav2{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+}
+.nav2 button{
+    padding: 0.4em;
+    border-radius: 10px;
+    background-color: #0287c7;
+    border: none;
+    color: #ffffff;
+    font-size: 0.9em;
+}
+.nav2 button:hover{
+    color: #c1c1c1;
+}
+.nav3{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    margin-top: 0.4em;
+    margin-bottom: 0.7em;
+}
+.nav3 button{
+    padding: 0.1em 0.4em 0.1em 0.4em;
+    border-radius: 7px;
+    background-color: #0287c7;
+    border: none;
+    color: #ffffff;
+    font-size: 0.9em;
+}
+.nav3 button:hover{
+    color: #c1c1c1;
+}
+.nav4{
+    padding-left: 7em;
+    padding-right: 7em;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+    border-bottom: solid 2px black;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.8em;
+}
+.nav5 {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+.nav5 a{
+    text-decoration: none;
+    color: black;
+    border: solid 1px #eeeeee;
+    padding: 0.5em;
+    font-size: 0.8em;
+    font-weight: 500;
+    position: relative;
+}
+.nav5 a:hover{
+    color: black;
+    font-weight: 650;
+}
+.nav5 a::before {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; 
+    height: 2px; 
+    background-color: transparent;
+    transition: width 0.3s, background-color 0.3s; 
+}
+
+.nav5 a:hover::before {
+    width: 100%; 
+    background-color: black; 
+}
+.icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+#business{
+    margin-top: 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 19em;
+    overflow: hidden;
+    padding-left: 15em;
+    border-bottom: solid 1px #b1b1b1;
+}
+#business h1{
+    font-size: 2.3em;
+    color: #363636;
+    font-weight: 400;
+}
+.business1 {
+    width: 60%;
+    float: right;
+    position: relative;
+    background: #fff;
+}
+.business1::before {
+    content: '';
+    transform: skewX(341deg);
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    border-right: 40px solid #363636;
+    border-left: 6px solid #6a6d73;
+    z-index: 1;
+}
+#career{
+    padding: 3em 12em 3em 12em;
+}
+.career1{
+    text-align: justify;
+    padding-bottom: 2em;
+}
+.career1 p{
+    font-size: 1.1em;
+    color: #363636;
+    margin-bottom: 0.5em;
+}
+.career1 h5{
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+.career1 h1{
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #363636;
+}
+.career1 h1 a{
+    text-decoration: none;
+    color: #1a78ac;
+}
+.career2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+}
+.career3{
+    width: 200em;
+    color: #363636;
+}
+.box{
+    border: solid 2px #eeeeee;
+    padding: 0.5em 0.8em 0.5em 0.8em;
+    text-align: justify;
+    background-color: #f7f7f7;
+    margin-bottom: 1em;
+}
+.box p{
+    font-size: 0.9em;
+    font-weight: 500;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.info1 h2{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.info1 p{
+    font-size: 0.95em;
+    font-weight: 500;
+}
+.info2 button{
+    padding: 0.1em 1em 0.2em 1em;
+    font-size: 1.2em;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(9deg, rgba(10,81,219,1) 17%, rgba(42,134,219,1) 47%, rgba(45,159,212,1) 100%);
+    color: #ffffff;
+}
+.info2 button:hover{
+    background: #2da0d6;
+}
+.btn{
+    background-color: #f7f7f7 !important;
+    border: none !important;
+    color: #1a78ac !important;
+    font-weight: 700 !important;
+}
+.card{
+    border: none !important;
+    background-color: #f7f7f7 !important;
+}
+.card li{
+    font-size: 0.9em;
+    font-weight: 500;
+}
+.career4{
+    padding: 0.5em;
+    box-shadow: -6px 2px 5px 1px #eee;
+    padding-bottom: 2em;
+    color: #fff;
+    height: 34em;
+}
+.career4 button{
+    font-size: 0.9em;
+    padding: 0.2em 1.5em 0.2em 1.5em;
+    border-radius: 3px;
+    border: none;
+}
+.txt{
+    background-color: #363636;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    padding: 0.3em;
+    text-align: center;
+}
+.txt1 input{
+    width: 17em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.txt1 label{
+    color: #363636;
+}
+#submit{
+    background-color: #343a40;
+    color: #fff;
+    margin-right: 0.5em;
+}
+#submit:hover{
+    background-color: #23272b;
+}
+#reset{
+    background-color: #6c757d;
+    color: #fff;
+}
+#reset:hover{
+    background-color: #5a6268;
+}
+#last{
+    padding: 3em 7em 3em 12em;
+    background-color: #d7d7d7;
+    display: flex;
+    flex-direction: row;
+    gap: 7em;
+}
+#last h1{
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-bottom: 1em;
+}
+#last a:hover{
+    color: #838383;
+}
+
+.last1{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+.last2 h5{
+    font-size: 0.9em;
+    font-weight: 600;
+}
+.last2 p{
+    font-size: 0.9em;
+    color: #363636;
+}
+.last2 a{
+    text-decoration: none;
+    color: #363636;
+    font-size: 0.9em;
+}
+.last3 a{
+    text-decoration: none;
+    color: #363636;
+    font-size: 0.9em;
+    padding-bottom: 0.5em;
+}
+.last3 a img{
+    padding-top: 3em;
+}
+.last5{
+    padding-top: 3.5em;
+}
+.last5 a{
+    text-decoration: none;
+    color: #363636;
+    font-size: 0.9em;
+    padding-bottom: 0.5em;
+}
+.fab {
+    background: #303030;
+    color: #fff;
+    font-size: 16px;
+    margin: 26px 2px 20px 0;
+    padding: 7px;
+    border-radius: 8px 0 8px;
+    width: 32px;
+    text-align: center;
+}
+.last6 a{
+    text-decoration: none;
+    color: #363636;
+}
+.last6 button{
+    background-color: #363636;
+    color: #fff;
+    font-weight: 600;
+}
+.last4{
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+}
+footer{
+display: flex;
+flex-direction: row;
+justify-content: center;
+background-color: #000;
+}
+footer p{
+    padding-top: 1em;
+    color: #fff;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    body{
+        width: 300%;
+    }
+    .nav1{
+        padding-left: 2em;
+        padding-right: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+   .nav2{
+    display: flex;
+    flex-direction: row;
+   }
+   .nav2 button{
+    font-size: 1.8em;
+   }
+   .nav3 button{
+    font-size: 1.8em;
+   }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #ffffff;
+        position: relative;
+        padding-top: 4em;   
+        padding-bottom: 3em;  
+      }
+    
+      .topnav #myLinks {
+        display: none;
+        padding-top: 3em;
+      }
+      
+      .topnav a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      .nav5 a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1.8em;
+        font-weight: 600;
+        display: block;
+        width: 30em;
+        border: solid 1px #eeeeee;
+        margin-bottom: 5px;
+        margin-top: 1em;
+      }
+      .topnav img.active{
+        display: block;
+        position: absolute;
+        left: 2em;
+        top: 0em;
+        bottom: 2em;
+        width: 30%;
+      }
+      
+      .topnav a.icon {
+        background: white;
+        display: block;
+        position: absolute;
+        right: 0.5em;
+        top: 0;
+        font-size: 3em;
+      }
+      
+      .topnav a:hover {
+        color: black;
+      }
+      
+      .active {
+        color: white;
+      }
+      #business{
+        margin-top: 17em;
+        padding-left: 8em;
+      }
+      #career{
+        padding-left: 8em;
+        padding-right: 8em;
+      }
+      .career1 p{
+        font-size: 2.3em;
+        font-weight: 600;
+        margin-bottom: 0.8em;
+      }
+      .career1 h5{
+        font-size: 2em;
+        font-weight: 600;
+        margin-bottom: 0.8em;
+      }
+      .career1 h1{
+        font-size: 2.5em;
+      }
+      .career2{
+        display: flex;
+        flex-direction: column;
+      }
+      .career3{
+        width: 100%;
+      }
+      .box p{
+        font-size: 2em;
+      }
+      .info1 h2{
+        font-size: 2.3em;
+        font-weight: 600;
+      }
+      .info2 button{
+        font-size: 2.2em;
+        font-weight: 600;
+      }
+      .btn{
+        font-size: 0.9em !important;
+      }
+      .card li{
+        font-size: 1.8em;
+      }
+      .career4 {
+        height: auto;
+      }
+      .career4 button{
+        font-size: 2em;
+        font-weight: 600;
+      }
+      .txt{
+        font-size: 2em;
+        font-weight: 600;
+      }
+      .txt1 input{
+        width: 100%;
+        font-size: 2em;
+        border-bottom: 3px solid black;
+      }
+      .txt1 label{
+        font-size: 1.8em;
+        font-weight: 600;
+      }
+      #last{
+        padding: none;
+        display: flex;
+        flex-direction: column;
+    }
+    #last h1{
+        font-size: 2em;
+    }
+    .last1{
+        display: flex;
+        flex-direction: row;
+    }
+    .last4{
+        display: flex;
+        flex-direction: row;
+        gap: 22em;
+    }
+    .last2 h5{
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+    .last2 p{
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    .last2 a,
+    .last3 a,
+    .last5 a {
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+   .last6 a{
+    font-size: 1.5em;
+   }
+   footer p{
+    font-size: 1.8em;
+   }
+    }
